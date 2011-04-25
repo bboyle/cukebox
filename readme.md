@@ -50,9 +50,9 @@ When you’re visiting _Siberia_, I recommend:
 
 * [JRuby](http://www.jruby.org/)—it’s portable!
 * gems:
-** cucumber
-** syntax (highlighting in the HTML reports cucumber generates)
-** [watir-webdriver](https://github.com/jarib/watir-webdriver) (for automating web browser-based testing)
+  * cucumber
+  * syntax (highlighting in the HTML reports cucumber generates)
+  * [watir-webdriver](https://github.com/jarib/watir-webdriver) (for automating web browser-based testing)
 * portable firefox (if firefox is not installed, unless you wish to test only in IE)
 * cukebox (you will need to edit the path to portable firefox)
 * a command prompt with both jruby and cukebox on the `PATH`
