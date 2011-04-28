@@ -7,8 +7,6 @@
 # watir-webdriver ruby API
 # http://rubydoc.info/gems/watir-webdriver/0.2.1
 
-require 'watir-webdriver'
-
 
 After do
 	@browser.close if @browser
