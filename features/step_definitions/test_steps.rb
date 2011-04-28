@@ -8,12 +8,6 @@
 # http://rubydoc.info/gems/watir-webdriver/0.2.1
 
 
-After do
-	@browser.close if @browser
-	@driver.quit if @driver
-end
-
-
 Given /I have (.*) working/ do |w|
 	case w
 		when 'watir'
