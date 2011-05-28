@@ -16,6 +16,9 @@ Given /I have (.*) working/ do |w|
 		when 'webdriver'
 			@driver = Selenium::WebDriver.for :firefox
 			@driver.navigate.to 'http://bit.ly/watir-example'
+		when 'operawatir'
+			@browser = OperaWatir::Browser.new
+			@browser.goto 'http://bit.ly/watir-example'
 	end
 end
 
@@ -26,12 +29,9 @@ When /I run the (.*) demo/ do |w|
 			@browser.text_field(:name => "entry.0.single").set "Watir"
 			@browser.text_field(:name => "entry.1.single").set "I come here from Australia. \n The weather is great here."
 			@browser.radio(:value => "Watir").set
-			#@browser.radio(:value => "Watir").clear
 			@browser.checkbox(:value => "Ruby").set
 			@browser.checkbox(:value => "Python").set
 			@browser.checkbox(:value => "Python").clear
-			#@browser.select_list(:name => "entry.6.single").clear
-			#puts @browser.select_list(:name => "entry.6.single").options
 			@browser.select_list(:name => "entry.6.single").select "Chrome"
 			@browser.button(:name => "submit").click
 		when 'webdriver'
@@ -39,8 +39,8 @@ When /I run the (.*) demo/ do |w|
 			@driver.find_element(:name => 'entry.1.single').send_keys "I come here from Australia. \n The weather is great here."
 			@driver.find_element(:css => 'input[type=radio][value=Selenium]').click
 			@driver.find_element(:css => 'input[type=checkbox][value=Ruby]').click
-			@driver.find_element(:css => 'input[type=checkbox][value=Python]').click
-			@driver.find_element(:css => 'input[type=checkbox][value=Python]').click
+			@driver.find_element(:css => 'input[type=checkbox][value=Python]').click # set
+			@driver.find_element(:css => 'input[type=checkbox][value=Python]').click # clear
 			@driver.find_element(:name => 'entry.6.single').find_element(:css => 'option[value=Chrome]').select
 			@driver.find_element(:name => 'submit').click
 	end

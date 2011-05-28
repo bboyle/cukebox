@@ -7,3 +7,8 @@ Feature: Watir
     Given I have watir working
     When I run the watir demo
     Then I should see 'Thanks!' as the page title with watir
+
+  Scenario: operawatir test
+    Given I have operawatir working
+    When I run the watir demo
+    Then I should see 'Thanks!' as the page title with watir
