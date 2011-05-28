@@ -1,5 +1,5 @@
 Feature: Watir
-	As Ben
+	As a Ben
 	I want to learn watir
 	So that I can test web applications
 
