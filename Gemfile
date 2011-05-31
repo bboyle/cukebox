@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+gem "cucumber"
+gem "syntax"
+gem "watir-webdriver"
+gem "operawatir"
+gem "jruby-openssl"
