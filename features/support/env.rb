@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+
 require 'watir-webdriver'
 require 'operawatir'
 
