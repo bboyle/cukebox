@@ -49,7 +49,7 @@ When you’re on a *nix based system, I assume you just install ruby, the cucumb
 When you’re visiting _Siberia_, I recommend:
 
 * [JRuby](http://www.jruby.org/)—it’s portable!
-* Ruby gems: `gem install cucumber syntax watir-webdriver`
+* Ruby gems: `gem install cucumber syntax watir-webdriver operawatir`
   * cucumber
   * syntax (highlighting in the HTML reports cucumber generates)
   * [watir-webdriver](https://github.com/jarib/watir-webdriver) (for automating web browser-based testing)
