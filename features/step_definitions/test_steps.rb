@@ -41,7 +41,7 @@ When /I run the (.*) demo/ do |w|
 			@driver.find_element(:css => 'input[type=checkbox][value=Ruby]').click
 			@driver.find_element(:css => 'input[type=checkbox][value=Python]').click # set
 			@driver.find_element(:css => 'input[type=checkbox][value=Python]').click # clear
-			@driver.find_element(:name => 'entry.6.single').find_element(:css => 'option[value=Chrome]').select
+			@driver.find_element(:name => 'entry.6.single').find_element(:css => 'option[value=Chrome]').click
 			@driver.find_element(:name => 'submit').click
 	end
 end
