@@ -1,5 +1,4 @@
 require 'watir-webdriver'
-require 'operawatir'
 
 # PORTABLE_APPS = 'C:\PortableApps'
 # Selenium::WebDriver::Firefox.path = PORTABLE_APPS + '\FirefoxPortable\FirefoxPortable.exe'

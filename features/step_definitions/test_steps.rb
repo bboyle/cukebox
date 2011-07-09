@@ -17,7 +17,7 @@ Given /I have (.*) working/ do |w|
 			@driver = Selenium::WebDriver.for :firefox
 			@driver.navigate.to 'http://bit.ly/watir-example'
 		when 'operawatir'
-			@browser = OperaWatir::Browser.new
+			@browser = Watir::Browser.new :opera
 			@browser.goto 'http://bit.ly/watir-example'
 	end
 end
